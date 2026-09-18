@@ -6,7 +6,7 @@
 // pre-generated), the numbers are accurate to the second whenever this
 // URL is loaded or refreshed.
 
-const START = new Date(Date.UTC(2011, 0, 1, 9, 0, 0)); // 9:00 AM, Jan 1 2011 (UTC)
+const START = new Date(Date.UTC(2011, 0, 1, 3, 30, 0)); // 9:00 AM Jan 1 2011 IST → 03:30 UTC
 const BUILD = "11.1.1";
 const STATUS = "Online";
 
