@@ -8,7 +8,6 @@
 
 const START = new Date(Date.UTC(2011, 0, 1, 9, 0, 0)); // 9:00 AM, Jan 1 2011 (UTC)
 const BUILD = "11.1.1";
-const VERSION = "15.8.25";
 const STATUS = "Online";
 
 function pad(n) {
@@ -37,6 +36,7 @@ function calcUptime(start, now) {
 }
 
 function buildSvg({ years, months, days, hours, minutes, seconds }) {
+  const VERSION = `${years}.${months}.${days}`; // e.g. "15.8.25" = 15 yrs, 8 months, 25 days old
   const values = [years, months, days, hours, minutes, seconds];
   const labels = ["Years", "Months", "Days", "Hours", "Minutes", "Seconds"];
 
